@@ -3,37 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
     <title>SkyCast</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city.." required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Chicago</h1>
-        <p>
-          Friday 12:00, sunny
-          <br />
-          Humidity: 50%, Wind: 7mph
-        </p>
-      </div>
-      <div>☀️ 60°F</div>
-    </main>
-    <footer>
-      Coded by
-      <a href="https://github.com/vynguyen324" target="_blank">Vivian Nguyen</a>
-      and is
-      <a href="https://github.com/vynguyen324/final-weather-app" target="_blank"
-        >open-sourced on Github</a
-      >
-      and
-      <a href="https://skycast-shecodes.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1>Chicago</h1>
+          <p>
+            Friday 12:00, sunny
+            <br />
+            Humidity: 50%, Wind: 7mph
+          </p>
+        </div>
+        <div>☀️ 60°F</div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/vynguyen324" target="_blank"
+          >Vivian Nguyen</a
+        >
+        and is
+        <a
+          href="https://github.com/vynguyen324/final-weather-app"
+          target="_blank"
+          >open-sourced on Github</a
+        >
+        and
+        <a href="https://skycast-shecodes.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>

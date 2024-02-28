@@ -69,18 +69,19 @@ header {
   margin-top: 50px;
 }
 
-.weather-icon {
-  font-size: 50px;
+.weather-app-icon {
+  width: 88px;
+  height: 88px;
 }
 
 .weather-temp-value {
   font-size: 80px;
   font-weight: bold;
-  margin-left: 10px;
+
+  line-height: 88px;
 }
 
 .weather-unit {
-  margin-top: 5px;
   font-size: 25px;
 }
 

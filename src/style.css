@@ -77,12 +77,30 @@ header {
 .weather-temp-value {
   font-size: 80px;
   font-weight: bold;
-
   line-height: 88px;
 }
 
 .weather-unit {
   font-size: 25px;
+}
+
+.weather-forecast {
+  margin-top: 25px;
+  text-align: center;
+  color: #0b1957;
+}
+
+.weather-forecast-date {
+  font-size: 15px;
+}
+
+.weather-forecast-temp-min {
+  opacity: 0.5;
+  margin-left: 5px;
+}
+
+.weather-forecast-temperatures {
+  font-size: 15px;
 }
 
 a {

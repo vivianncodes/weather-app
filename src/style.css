@@ -87,7 +87,9 @@ header {
 }
 
 .weather-forecast {
-  margin-top: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
   text-align: center;
   color: #0b1957;
 }

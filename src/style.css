@@ -1,5 +1,7 @@
 body {
-  background-color: #d0e3ff;
+  background-image: url("https://scontent-mia3-1.xx.fbcdn.net/v/t1.6435-9/69680248_361799438098963_7415244329121218560_n.png?_nc_cat=106&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=2S3WOpO8RSoAX-7IryG&_nc_ht=scontent-mia3-1.xx&oh=00_AfBug5kX_4PU_cUiRzJ7I4XJocs-DndmoVxy4zde_1SYIQ&oe=66082A54");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: "Manjari", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -24,9 +26,9 @@ p {
   background: #fff9f0;
   max-width: 600px;
   margin: 45px auto;
-  box-shadow: 0px 5px 20px 5px rgba(11, 25, 87, 0.3);
+  box-shadow: 0px 15px 20px 5px rgba(76, 94, 168, 0.3);
   border-radius: 10px;
-  padding: 30px;
+  padding: 50px;
 }
 
 header {
@@ -40,6 +42,7 @@ header {
   border-radius: 20px;
   width: 80%;
   padding: 10px 20px;
+  font-family: "Manjari", sans-serif;
 }
 
 .search-form-button {
@@ -53,7 +56,7 @@ header {
 
 .weather-app-data {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
 }
 
@@ -118,6 +121,7 @@ a {
 
 footer {
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
   color: rgba(0, 0, 0, 0.6);
+  line-height: 20px;
 }

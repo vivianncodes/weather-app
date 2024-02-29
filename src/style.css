@@ -54,7 +54,7 @@ header {
 .weather-app-data {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .temperature-container {
@@ -67,6 +67,7 @@ header {
 
 .temperature-container {
   margin-top: 50px;
+  align-items: center;
 }
 
 .weather-app-icon {
@@ -77,11 +78,12 @@ header {
 .weather-temp-value {
   font-size: 80px;
   font-weight: bold;
-  line-height: 88px;
+  margin-top: 30px;
 }
 
 .weather-unit {
-  font-size: 25px;
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 
 .weather-forecast {

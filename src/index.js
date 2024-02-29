@@ -16,7 +16,7 @@ function refreshWeather(response) {
   humidityElement.innerHTML = `Humidity: ${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `Wind: ${response.data.wind.speed}mph`;
   temperatureElement.innerHTML = Math.round(temperature);
-  iconElement.innerHTML = `<img src="${response.data.condition.icon.url}" class="weather-app-icon" />`;
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
 
 function formatDate(date) {
@@ -27,7 +27,7 @@ function formatDate(date) {
     "Monday",
     "Tuesday",
     "Wednesday",
-    "Thurssday",
+    "Thursday",
     "Friday",
     "Saturday",
   ];
@@ -53,7 +53,31 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date">${day}</div>
+        <div class="weather-forecast-icon">🌤️</div>
+        <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temp-max">18°</span>
+          <span class="weather-forecast-temp-min">12°</span>
+        </div>
+      </div>
+    `;
+  });
+
+  let forecast = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Chicago");
+displayForecast();
